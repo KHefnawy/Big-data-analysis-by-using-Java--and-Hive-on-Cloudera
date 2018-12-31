@@ -1,0 +1,25 @@
+Pseudo code for map 1 
+1) take the input line by line 
+2) split the line into tokens by delimiter “,”
+3) iterate over the tokens and increment a counter by 1 every time 
+4) if counter == 1 store value of x
+		X = ciel (x) 
+    if counter == 2 store value of y
+                         y = ciel (y) 
+   if  counter == 5 store value of the place_ID 
+      write to the output of the map (x+”_” + y+”,”place_ID, 1);
+Pseudo code for reduce 1 
+1) For the same square_ID and place_ID 
+ Sum their values 
+
+
+Pseudo code for map 1 
+1) take the output of the first map reduce line by line 
+2) split the line into tokens by delimiter “/t”
+3) write to the output of the map (square_ID, place_ID,Sum)
+Pseudo code for reduce 1 
+1) For the same square_ID 
+2) split the value to sum and place_ID 
+3) find the max Sum 
+4) update  bestPlace = place_ID 
+
